@@ -21,7 +21,7 @@ dependencies:
 
 dev_dependencies:
   pedantic: ^1.11.1
-  sentry_dart_plugin: ^1.0.0-alpha.4
+  sentry_dart_plugin: ^1.0.0-beta.2
 
 dependency_overrides:
   sentry:
@@ -40,7 +40,10 @@ flutter:
 sentry:
   upload_native_symbols: false
   upload_source_maps: true
-  project: sentry-flutter
-  org: sentry-sdks
-  log_level: error
+  include_native_sources: false
+  org: gilberts-garage
+  project: sentry-dart
+  auth_token: 9be9821c1f85464d960c6b55bb716619ec612f6dd9554802bfe68aa115ba3e50
+  release: 1.2.3
+  log_level: debug
   wait_for_processing: true

@@ -9,12 +9,13 @@ import 'package:universal_platform/universal_platform.dart';
 import 'package:feedback/feedback.dart' as feedback;
 import 'package:provider/provider.dart';
 import 'user_feedback_dialog.dart';
+import 'a/b/test.dart' show tryCatchModule;
 import 'package:dio/dio.dart';
 import 'package:sentry_dio/sentry_dio.dart';
 
 // ATTENTION: Change the DSN below with your own to see the events in Sentry. Get one at sentry.io
 const String _exampleDsn =
-    'https://9934c532bf8446ef961450973c898537@o447951.ingest.sentry.io/5428562';
+    'https://e216a4a5313d445191f0808fa10fcdbd@o1169741.ingest.sentry.io/6537656';
 
 final _channel = const MethodChannel('example.flutter.sentry.io');
 
@@ -111,6 +112,10 @@ class MainScaffold extends StatelessWidget {
             ElevatedButton(
               onPressed: () => tryCatch(),
               child: const Text('Dart: try catch'),
+            ),
+            ElevatedButton(
+              onPressed: () => tryCatchModule(),
+              child: const Text('Dart: try catch module'),
             ),
             ElevatedButton(
               onPressed: () => Scaffold.of(context).showBottomSheet<dynamic>(
