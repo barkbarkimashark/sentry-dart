@@ -1,6 +1,6 @@
 name: sentry_flutter_example
 description: Demonstrates how to use the sentry_flutter plugin.
-version: 6.6.0-alpha.2
+version: 1.2.4
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
@@ -44,6 +44,6 @@ sentry:
   org: gilberts-garage
   project: sentry-dart
   auth_token: 9be9821c1f85464d960c6b55bb716619ec612f6dd9554802bfe68aa115ba3e50
-  release: 1.2.3
+  release: 1.2.4
   log_level: debug
   wait_for_processing: true
